@@ -26,7 +26,7 @@
         </ul>
         <span class="navbar-text">
           <button class="btn btn-info mr-3 my-2 my-sm-0" type="submit">Entrar</button>ou
-          <button class="btn btn-info ml-3 my-2 my-sm-0" type="submit">Cadastrar</button>
+          <button class="btn btn-info ml-3 my-2 my-sm-0" type="submit">Cadastro usuário</button>
         </span>
       </div>
   </div>
@@ -43,7 +43,7 @@
               <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Login</a>
             </li>
             <li class="nav-item col-md-6">
-              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Cadastre-se</a>
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Cadastro usuário</a>
             </li>
           </ul>
 
@@ -51,7 +51,8 @@
 
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <form>
-              <label for="exampleInputEmail1">Email</label>
+              <p>Não possui cadastro? Clique na aba ao lado.</p>
+            <label for="exampleInputEmail1">Email</label>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">@</span>
@@ -67,12 +68,29 @@
             </div>
               <div class="form-group text-center">
                 <button type="submit" class="btn btn-info btn-lg btn-block">Login</button>
-                <p class="mt-3"><a href="#">Esqueceu sua senha ?</a></p>
+                <div class="form-group text-center">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Mantenha-me logado
+                    </label>
+                </div>
+                <p class="mt-3"><a href="#">Esqueceu seu usuario ?</a> <a href="#">Esqueceu sua senha ?</a></p>
               </div>
+              
             </form>
           </div>
 
+          <!-- Aba cadastro de Usuario -->
+
           <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <p>Já possui cadastro? Clique na aba ao lado.</p>
+            <label for="validationDefault01">Nome</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+              </div>
+              <input type="text" class="form-control" id="validationDefault01" placeholder="Seu Nome" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
             <label for="exampleInputEmail1">Email</label>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
@@ -87,7 +105,8 @@
               </div>
               <input type="text" class="form-control" id="exampleInputPassword1" placeholder="******" aria-label="Username" aria-describedby="basic-addon1"><br>
             </div>
-            <p>Insira sua senha com pelo menos 6 caracteres</p>
+            <p><li>Insira sua senha com pelo menos 6 caracteres</li></p>
+            <label for="exampleInputPassword1">Confirme sua senha</label>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1"><i class="fa fa-lock"></i></span>
@@ -95,7 +114,7 @@
               <input type="text" class="form-control" id="exampleInputPassword1" placeholder="******" aria-label="Username" aria-describedby="basic-addon1"><br>
             </div>
             <button type="submit" class="btn btn-info btn-lg btn-block">Cadastrar</button>
-            <div class="text-center mt-3"><em>Ao se cadastrar você aceita os nossos <a href="#">termos de uso</a></em></div>
+            <div class="text-center mt-3"><em>Ao se cadastrar você aceita os nossos <a href="#">Termos de uso</a> e <a href="#">Polticas de Privacidade</a></em></div>
           </div>
 
         </div><!--fim tab-content-->
@@ -104,125 +123,6 @@
       </div>
     </div>
   </section>
-
-<!--
-  <nav class="navbar navbar-expand-lg navbar-light bg-light visible-xs hidden-sm hidden-md hidden-lg">
-    <a class="navbar-brand" href="#"><img src="img/logo7.png" class="img-fluid logo" title="Imobiliária São José" alt="Imobiliária São José"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
--->
-
-
-<!--
-  <footer class="bg-dark">
-    <div class="bg-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <figure>
-            <img src="img/logo7.png">
-          </figure>
-          <h5>Tradição De Bons Negócios</h5>
-          <div class="media">
-              <i class="fa fa-map-marker fa-1x align-self-center mr-3 orange"></i>
-              <div class="media-body">
-                Av. Wilson Alvarenga, 1725 Carneirinhos, João Monlevade, MG
-              </div>
-          </div>
-          <div class="media">
-              <i class="fa fa-envelope fa-1x align-self-center mr-3 orange"></i>
-              <div class="media-body">
-                imobiliariasaojose@gmail.com
-              </div>
-          </div>
-          <div class="media">
-              <i class="fa fa-phone fa-1x align-self-center mr-3 orange"></i>
-              <div class="media-body">
-                (31) 3852-6000
-              </div>
-          </div>
-          
-        </div>
-        <div class="col-md-4">
-          <h5>Mapa do Site</h5>
-          <ul class="navbar-nav justify-content-center">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Quem Somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Serviços</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Venda de Imóveis</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Aluguel de Imóveis</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h5>Últimas Propriedades</h5>
-          <ul class="list-unstyled">
-          <li class="media">
-            <img class="mr-3 rounded-circle" src="img/mansion.jpg" alt="Generic placeholder image" style="width: 120px; height:120px;">
-            <div class="media-body">
-              <h5 class="mt-0 mb-1">Casa Residencial</h5>
-              Cras sit amet nibh libero
-            </div>
-          </li>
-          <li class="media my-4">
-            <img class="mr-3 rounded-circle" src="img/new-home.jpg" alt="Generic placeholder image" style="width: 120px; height:120px;">
-            <div class="media-body">
-              <h5 class="mt-0 mb-1">Apartamento</h5>
-              Cras sit amet nibh libero
-            </div>
-          </li>
-          <li class="media">
-            <img class="mr-3 rounded-circle" src="img/mansion.jpg" alt="Generic placeholder image" style="width: 120px; height:120px;">
-            <div class="media-body">
-              <h5 class="mt-0 mb-1">Apartamento</h5>
-              Cras sit amet nibh libero
-            </div>
-          </li>
-        </ul>
-        </div>
-      </div>
-    </div>
-    </div>
-  </footer>
-
--->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
